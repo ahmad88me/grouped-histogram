@@ -16,10 +16,10 @@ ax = sns.barplot(
     # palette="dark",
     # palette="mako",
     palette="mako",
-
     # pallette="Spectral"
 )
 
+ax.set_yscale("log")
 
 hatches = ["|||", "--", "\\\\", "++"]
 # Loop over the bars
