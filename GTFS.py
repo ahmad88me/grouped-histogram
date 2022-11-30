@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import itertools
 
-# sns.set_theme(style="whitegrid")
+sns.set_theme(style="whitegrid", font_scale=1.2)
 
 df = pd.read_csv("GTFS.csv")
 
@@ -12,7 +12,7 @@ df = pd.read_csv("GTFS.csv")
 ax = sns.barplot(
     data=df,
     #kind="bar",
-    x="Data Scaling Factor", y="Time Elapsed", hue="Tool",
+    x="Data Scaling Factor", y="Time Elapsed (seconds)", hue="Tool",
     # errorbar="sd",  alpha=.6, height=6,
     # palette="dark",
     # palette="mako",
